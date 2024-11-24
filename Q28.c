@@ -2,15 +2,26 @@
 #include<math.h>
 int main()
 { 
-   int a,b,c,n;
-   printf("enter three digit no. \n");
+    int a,b=0,sum=0,original,r,n;
+   printf("enter no. \n");
    scanf("%d",&n);
-        a=n/100;
-        b=(n/10)-(a*10);
-        c=n%10;
-        if((a*a*a)+(b*b*b)+(c*c*c)==n)
-        printf("%d is armstrong no. " ,n);
-        else 
-        printf("%d is not armstrong no. " ,n);
-     return 0;
+   original=n;
+   while(original!=0)
+     {
+      a=original %10;
+      b++;// counting num of digits in a number
+      original/=10;
+      }
+      original=n;
+      for(int i=0;n!=0;i++)
+       {
+        r=n%10;
+        sum+=pow(r,b);
+        n/=10;
+        }
+      if(original==sum)
+        printf("%d is an armstrong no. " ,original);
+        else
+       printf("%d is not armstrong no. " ,original);
+      return 0;
 }
