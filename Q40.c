@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-   int i, sum;
+   int i, sum=0;
    do
    {
    //reads all the numbers 
