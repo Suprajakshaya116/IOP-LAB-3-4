@@ -2,7 +2,7 @@
 int main()
 {
    //finding factors of a number
-   int i,n,;
+   int i,n;
    printf("enter any positive number : \n");
    scanf("%d",&n);
    printf("factors of %d= ",n);
